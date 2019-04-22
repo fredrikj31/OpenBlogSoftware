@@ -1,0 +1,14 @@
+.banner-picture {
+	background-size: cover;
+	background-position: center;
+	border-radius: 0;
+}
+
+.blog-picture {
+	max-height: 25%;
+}
+
+.blog-picture img {
+	max-width: 100%;
+	display: block;
+}

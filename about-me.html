@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Blog Name - About Me</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<script src="main.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- Custom Icons -->
+	<link rel="stylesheet" href="css/icons.css" />
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="#">Blog Name</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">About
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<h2 class="my-4">About me</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat.</p>
+
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+					anim id est laborum.</p>
+
+				<img class="img-fluid" src="http://placehold.it/2000x900" alt="">
+			</div>
+			<!-- /.col-lg-3 -->
+
+			<div class="col-lg-4">
+				<div class="card mt-4">
+					<img class="card-img-top img-fluid" src="http://placehold.it/300x300" alt="" />
+					<div class="card-body">
+						<h3 class="card-title">About this blog</h3>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta.
+							Totam id dolores, sint aperiam sequi pariatur praesentium animi
+							perspiciatis molestias iure, ducimus!
+						</p>
+					</div>
+				</div>
+				<div class="card mt-4">
+					<img class="card-img-top img-fluid" src="https://instagram.com/p/Bv7OoArAcHM/media/?size=l" alt="" />
+					<div class="card-body">
+						<h3 class="card-title">Latest Instagram Photo</h3>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta.
+						</p>
+					</div>
+					<div class="card-footer">
+						<a class="btn btn-info float-right" href="https://www.instagram.com/instagram" target="_blank">Instagram</a>
+					</div>
+				</div>
+				<!-- /.card -->
+			</div>
+			<!-- /.col-lg-9 -->
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="text-center">
+					<h3>Subscribe to my newsletter!</h3>
+				</div>
+			</div>
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4 text-center">
+				<form action="#" class="needs-validation" novalidate>
+					<div class="form-group">
+						<label for="email">Email address:</label>
+						<input type="email" class="form-control text-center" id="email" placeholder="test@mail.com" required>
+						<div class="invalid-feedback">
+							You need to fill in your email.
+						</div>
+					</div>
+					<button type="submit" class="btn btn-info">Subscribe</button>
+				</form>
+			</div>
+			<div class="col-lg-4"></div>
+		</div>
+		<br>
+		<br>
+		<br>
+	</div>
+	<!-- /.container -->
+
+	<!-- Footer -->
+	<footer class="py-5 bg-dark">
+		<div class="container">
+			<h6 class="m-0 text-center text-white">Copyright &copy; Blog Name 2019</h6>
+			<br>
+			<small>
+				<p class="m-0 text-center text-white">Powered by <a href="https://openblogwebsite.cf" target="_blank">OpenBlogSystem</a></p>
+			</small>
+		</div>
+		<!-- /.container -->
+	</footer>
+
+	<!-- Bootstrap Form Validation -->
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function () {
+			'use strict';
+			window.addEventListener('load', function () {
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				var forms = document.getElementsByClassName('needs-validation');
+				// Loop over them and prevent submission
+				var validation = Array.prototype.filter.call(forms, function (form) {
+					form.addEventListener('submit', function (event) {
+						if (form.checkValidity() === false) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+						form.classList.add('was-validated');
+					}, false);
+				});
+			}, false);
+		})();
+	</script>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
