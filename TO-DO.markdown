@@ -29,3 +29,8 @@ hvor mange gange linket er blevet kliket. Men dele funktionen gør også at brug
 - `Ad section` Man vil kunne tilføle en ad til start skærmen som ville gøre at man vil kunne tjene penge på bloggen.
 - `Like & Dislike` En funktion hvor bruger kan like eller dislike et blog opslag. Det skal være beskyttet mod ip adressere og cookies.
 Så man ikke kan gøre det mere end en gang.
+
+
+CONFIRM LOGOUT MODAL
+
+NOTIFICATIONS: Når man opretter et nyt blog opslag, så får man en notification
