@@ -47,7 +47,7 @@
 				<li class="nav-item">
 					<a class="nav-link" href="../dashboard.html">Dashboard</a>
 				</li>
-				<li class="nav-item dropdown">
+				<li class="nav-item dropdown active">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">
 						Blog
@@ -56,7 +56,7 @@
 						<a class="dropdown-item" href="#"><i class="fas fa-eye"></i> See Blog</a>
 						<a class="dropdown-item" href="#"><i class="fas fa-chart-bar"></i> Statistics</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#"><i class="fas fa-cogs"></i> Settings</a>
+						<a class="dropdown-item active" href="#"><i class="fas fa-cogs"></i> Settings</a>
 					</div>
 				</li>
 				<li class="nav-item dropdown">
@@ -87,12 +87,12 @@
 			</ul>
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
 						User
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item active" href="#">Settings</a>
+						<a class="dropdown-item" href="#">Settings</a>
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="../logout.html">Logout</a>
 					</div>
@@ -104,66 +104,60 @@
 	<br>
 
 	<div class="container">
-		<h2>Edit Profile:</h2>
+		<h2>Blog Settings:</h2>
 		<br>
 		<div class="row">
 			<div class="col">
 				<div class="card">
-					<div class="card-header">Login Settings:</div>
+					<div class="card-header">General Settings:</div>
 					<div class="card-body">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Firstname: <b>John</b></li>
-							<li class="list-group-item">Lastname: <b>Doe</b></li>
-					  	</ul>
+						<form action="" method="post">
+							<div class="form-group">
+								<label>Blog Name:</label>
+								<input type="text" class="form-control" placeholder="Blog Name..." value="Test Blog">
+							</div>
+							<div class="form-group">
+								<label>Blog Author:</label>
+								<input type="text" class="form-control" placeholder="Blog Author..." value="John Doe">
+							</div>
+							<div class="form-group">
+								<label>Blog Language:</label>
+								<input type="text" class="form-control" placeholder="Blog Language..." value="Danish">
+							</div>
+							<button type="submit" class="btn btn-primary float-right">Update Settings</button>
+						</form>
 					</div>
-					<div class="card-footer"><small><i>These settings can not be edited</i></small></div>
+					<div class="card-footer"><small><i><b>Info:</b> These are the general settings.</i></small></div>
 				</div>
 			</div>
-			<div class="col"></div>
-			<div class="col"></div>
+			<div class="col">
+				<div class="card">
+					<div class="card-header">Homepage Text:</div>
+					<div class="card-body">
+						<form action="" method="post">
+							<div class="form-group">
+								<label>Header Main Text:</label>
+								<input type="text" class="form-control" placeholder="Main Header Text..." value="Welcome to this blog">
+							</div>
+							<div class="form-group">
+								<label>Header Text:</label>
+								<textarea rows="3" col="5" style="resize: none;" class="form-control" placeholder="Header Text...">On this blog you will learn something you need to learn to live.</textarea>
+							</div>
+							<div class="form-group">
+								<label>Header Background:</label>
+								<br>
+								<input type="file">
+							</div>
+							<button type="submit" class="btn btn-primary float-right">Update Settings</button>
+						</form>
+					</div>
+					<div class="card-footer"><small><i><b>Info:</b> You can use any picture, the system will resize it.</i></small></div>
+				</div>
+			</div>
 		</div>
 		<br>
 		<hr>
 		<br>
-		<div class="row">
-			<div class="col">
-				<div class="card">
-					<div class="card-header">Change Email:</div>
-					<div class="card-body">
-						<form action="/action_page.php">
-							<div class="form-group">
-								<label>New Email:</label>
-								<input type="email" class="form-control">
-							</div>
-							<div class="form-group">
-								<label>Confirm with Password:</label>
-								<input type="password" class="form-control">
-							</div>
-							<button type="submit" class="btn btn-primary float-right">Change Email</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card">
-					<div class="card-header">Change Password:</div>
-					<div class="card-body">
-						<form action="/action_page.php">
-							<div class="form-group">
-								<label>New Password:</label>
-								<input type="password" class="form-control">
-							</div>
-							<div class="form-group">
-								<label>Confirm with Old Password:</label>
-								<input type="password" class="form-control">
-							</div>
-							<button type="submit" class="btn btn-primary float-right">Change Password</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="col"></div>
-		</div>
 	</div>
 
 	<!-- Bootstrap Form Validation -->
