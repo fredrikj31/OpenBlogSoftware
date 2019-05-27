@@ -36,6 +36,15 @@
 			var DBPass = document.getElementById('DBPass').value;
 			var DBName = document.getElementById('DBName').value;
 			
+			/* Creating Ajax Request */
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById('ConnRespons').innerHTML = this.responseText;
+				}
+			}
+			xmlHttp.open("GET", "test-connection.php?Address=" + DBAddress + "&User=" + DBName + "&Pass=" + DBPass + "&Name=" + DBName, true);
+			xmlHttp.send();
 		}
 	</script>
 </head>
@@ -73,6 +82,7 @@
 					<br>
 					<br>
 				</form>
+				<p><span id="ConnRespons"></span></p>
 				<button class="btn btn-success" onclick="checkConn()">Check Connection</button>
 			</div>
 			<div class="col"></div>

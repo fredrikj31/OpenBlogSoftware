@@ -1,26 +1,19 @@
 <?php
 
 // get the q parameter from URL
-$q = $_REQUEST["q"];
+$DBAddress = $_GET["Address"];
+$DBUser = $_GET["User"];
+$DBPass = $_GET["Pass"];
+$DBName = $_GET["Name"];
 
-$hint = "";
+// Create connection
+$conn = mysqli_connect($DBAddress, $DBUser, $DBPass, $DBName);
 
-// lookup all hints from array if $q is different from "" 
-if ($q !== "") {
-    $q = strtolower($q);
-    $len=strlen($q);
-    foreach($a as $name) {
-        if (stristr($q, substr($name, 0, $len))) {
-            if ($hint === "") {
-                $hint = $name;
-            } else {
-                $hint .= ", $name";
-            }
-        }
-    }
+// Check connection
+if (!$conn) {
+    die("Connection failed!");
+} else {
+    print("Database Found! This is a valid database connection.");
 }
-
-// Output "no suggestion" if no hint was found or output correct values 
-echo $hint === "" ? "no suggestion" : $hint;
 
 ?>
