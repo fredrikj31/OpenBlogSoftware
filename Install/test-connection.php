@@ -8,10 +8,9 @@ $DBName = $_GET["Name"];
 
 error_reporting(0);
 
-if (empty($DBPass)) {
+if (empty($DBPass) || $DBPass == " ") {
 	$DBPass = "";
 }
-
 
 // Create connection
 $conn = mysqli_connect($DBAddress, $DBUser, $DBPass, $DBName);
