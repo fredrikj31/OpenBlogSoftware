@@ -43,7 +43,7 @@
 					document.getElementById('ConnRespons').innerHTML = this.responseText;
 				}
 			}
-			xmlHttp.open("GET", "test-connection.php?Address=" + DBAddress + "&User=" + DBUser + "&Pass=" + DBPass + "&Name=" + DBName, true);
+			xmlHttp.open("GET", "test-database.php?Address=" + DBAddress + "&User=" + DBUser + "&Pass=" + DBPass + "&Name=" + DBName, true);
 			xmlHttp.send();
 		}
 	</script>
@@ -53,15 +53,12 @@
 
 	<br>
 	<div class="container text-center">
-		<h2>Welcome to the install of your new blog!</h2>
-		<br>
-		<br>
-		<h4>First of all you need to link the software to your database</h4>
+		<h2>Second you need to setup your database details</h2>
 		<br>
 		<div class="row">
 			<div class="col"></div>
 			<div class="col">
-				<form action="setup_2.html" method="POST" class="needs-validation" novalidate>
+				<form action="connect-database.php" method="POST" class="needs-validation" novalidate>
 					<div class="form-group">
 						<label>Server Address:</label>
 						<input type="text" class="form-control" id="DBAddress" name="DBAddress" placeholder="127.0.0.1" required>

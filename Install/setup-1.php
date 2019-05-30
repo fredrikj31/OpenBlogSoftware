@@ -97,7 +97,7 @@
 					</tbody>
 				</table>
 
-				<button class="btn btn-info" onclick="location.href = 'index3.html';">Next</button>
+				<button class="btn btn-info" onclick="location.href = 'setup-2.php';">Next</button>
 			</div>
 			<div class="col"></div>
 		</div>
