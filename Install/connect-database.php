@@ -30,7 +30,7 @@
 </head>
 <body>
 	<div class="container text-center">
-		<h2>Creat the database file. And setting up the database connection.</h2>
+		<h2>Create the database file. And setting up the database connection.</h2>
 		<br>
 		<?php
 
