@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Blog Name | Admin Panel</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- Custom Icons -->
+	<link rel="stylesheet" href="css/icons.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<style>
+	.bd-placeholder-img {
+		font-size: 1.125rem;
+		text-anchor: middle;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	@media (min-width: 768px) {
+		.bd-placeholder-img-lg {
+			font-size: 3.5rem;
+		}
+	}
+</style>
+
+<body>
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="text-center mb-4">Admin Panel</h2>
+				<br>
+				<div class="row">
+					<div class="col-md-5 mx-auto">
+						<div class="card rounded-1">
+							<div class="card-header">
+								<h4 class="mb-0">Login</h4>
+							</div>
+							<div class="card-body">
+								<form action="index.html" class="needs-validation" novalidate method="POST">
+									<div class="form-group">
+										<label>Username</label>
+										<input type="text" class="form-control rounded-1" required>
+										<div class="invalid-feedback">
+											You need to fill out this.
+										</div>
+									</div>
+									<div class="form-group">
+										<label>Password</label>
+										<input type="password" class="form-control rounded-1" required>
+										<div class="invalid-feedback">
+											You need to fill out this.
+										</div>
+									</div>
+									<button type="submit" class="btn btn-primary float-right" id="btnLogin">Login</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap Form Validation -->
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function () {
+			'use strict';
+			window.addEventListener('load', function () {
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				var forms = document.getElementsByClassName('needs-validation');
+				// Loop over them and prevent submission
+				var validation = Array.prototype.filter.call(forms, function (form) {
+					form.addEventListener('submit', function (event) {
+						if (form.checkValidity() === false) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+						form.classList.add('was-validated');
+					}, false);
+				});
+			}, false);
+		})();
+	</script>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
